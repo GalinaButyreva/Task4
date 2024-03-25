@@ -1,0 +1,192 @@
+<<Метод readFromFiles >> : 25.03.2024 08:08:14
+Аргументы:
+[/Users/JAVA_Learn/Task4]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkFioL >> : 25.03.2024 08:08:14
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkTypeL >> : 25.03.2024 08:08:14
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkDateL >> : 25.03.2024 08:08:14
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод readFromFiles >> : 25.03.2024 08:30:16
+Аргументы:
+[/Users/JAVA_Learn/Task4]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkFioL >> : 25.03.2024 08:30:16
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkTypeL >> : 25.03.2024 08:30:16
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkDateL >> : 25.03.2024 08:30:16
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkTypeL >> : 25.03.2024 10:05:01
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkFioL >> : 25.03.2024 10:05:01
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=иванович иван иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=иванов иван иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=петров иван иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=сидоров иван сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=фролов Андрей иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=васильев василий васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
+<<Метод checkDateL >> : 25.03.2024 10:05:01
+Аргументы:
+[[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_4, fio=Фролов Андрей Иванович, dateInput=, applType=other:xxx
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]]
+Результат выполнения:
+[Model= filename= file2.txtusername=Пользователь_1, fio=Иванович Иван Иванович, dateInput=07.04.2023 12:00:00, applType=web
+, Model= filename= file2.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=07.04.2023 08:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_1, fio=Иванов Иван Иванович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_2, fio=Петров Иван Иванович, dateInput=05.04.2023 15:07:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Сидоров Иван Сидорович, dateInput=05.04.2023 12:00:00, applType=web
+, Model= filename= file1.txtusername=Пользователь_5, fio=Васильев Василий Васильевич, dateInput=05.04.2023 14:23:12, applType=mobile
+]
