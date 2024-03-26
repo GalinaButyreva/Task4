@@ -6,6 +6,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
+import proj.task4.model.Logins;
+import proj.task4.model.Model;
+import proj.task4.model.Users;
+import proj.task4.repository.UsersRep;
+import proj.task4.service.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -45,7 +50,14 @@ public class DbWriterTest {
     @Autowired
     DataWriter dataWriter;
     @Autowired
-    DataCheck dataCheck;
+    DataCheckFio dataCheckFio;
+    @Autowired
+    DataCheckType dataCheckType;
+
+    @Autowired
+    DataCheckDate dataCheckDate;
+
+
 
     @Autowired
     UsersRep usersRep;
@@ -65,7 +77,7 @@ public class DbWriterTest {
                 Model modDb = new Model();
                 modDb.setUsername(u.getUsername());
                 modDb.setFio(u.getFio());
-                modDb.setDateInput(lg.getAccess_date().format(dataCheck.getDateFormatter()));
+                modDb.setDateInput(lg.getAccess_date().format(dataCheckDate.getDateFormatter()));
                 modDb.setApplType(lg.getApplication());
                 mdDbLst.add(modDb);
             }
@@ -93,7 +105,9 @@ public class DbWriterTest {
     void TestDb() throws IOException {
         // given
        Assertions.assertNotNull(dataReader);
-       Assertions.assertNotNull(dataCheck);
+       Assertions.assertNotNull(dataCheckDate);
+       Assertions.assertNotNull(dataCheckType);
+       Assertions.assertNotNull(dataCheckFio);
        Assertions.assertNotNull(dataWriter);
 
        //  Прочитаем данные when
@@ -102,9 +116,9 @@ public class DbWriterTest {
        then(!mods.isEmpty()).isTrue();
 
       // Выполним проверки
-       mods = dataCheck.checkTypeL(mods);
-       mods = dataCheck.checkFioL(mods);
-       mods = dataCheck.checkDateL(mods);
+       mods = dataCheckType.checkTypeL(mods);
+       mods = dataCheckFio.checkFioL(mods);
+       mods = dataCheckDate.checkDateL(mods);
         // then запишем в БД
        dataWriter.writeDb(mods);
 

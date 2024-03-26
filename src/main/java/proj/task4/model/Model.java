@@ -1,4 +1,4 @@
-package proj.task4;
+package proj.task4.model;
 
 import lombok.Getter;
 import lombok.Setter;

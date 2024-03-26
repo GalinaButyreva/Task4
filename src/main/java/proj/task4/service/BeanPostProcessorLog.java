@@ -1,4 +1,4 @@
-package proj.task4;
+package proj.task4.service;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
@@ -19,7 +19,7 @@ import java.util.*;
 
 @Component
 public class BeanPostProcessorLog implements BeanPostProcessor {
-    Map<String, Object> beans  = new HashMap<>();
+    private Map<String, Object> beans  = new HashMap<>();
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         if (Arrays.stream(bean.getClass().getDeclaredMethods()).anyMatch(m->m.isAnnotationPresent(LogTransformation.class)))

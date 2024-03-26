@@ -3,6 +3,8 @@ package proj.task4;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import proj.task4.service.DataMaker;
+
 import java.io.IOException;
 
 

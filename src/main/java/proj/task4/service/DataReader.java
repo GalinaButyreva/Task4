@@ -1,8 +1,8 @@
-package proj.task4;
+package proj.task4.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import proj.task4.model.Model;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,12 +18,6 @@ public class DataReader implements DataReadable {
     // Путь можно задавать в файле ресурсов
     // можно было вводить с экрана(сначала сделала так -  не понравилось)
 
-    //private TunePath tunePath;
-
-    //@Autowired
-    //public void setTunePath(TunePath tunePath) {
-    //    this.tunePath = tunePath;
-    //}
 
     @Value("${file.path}")
     private String path;

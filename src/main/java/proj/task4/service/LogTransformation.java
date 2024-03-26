@@ -1,4 +1,4 @@
-package proj.task4;
+package proj.task4.service;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

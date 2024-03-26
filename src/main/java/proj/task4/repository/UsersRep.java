@@ -1,7 +1,7 @@
-package proj.task4;
+package proj.task4.repository;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import proj.task4.model.Users;
 
 import java.util.List;
 

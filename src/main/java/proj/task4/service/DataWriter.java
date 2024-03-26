@@ -1,23 +1,30 @@
-package proj.task4;
+package proj.task4.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import proj.task4.model.Logins;
+import proj.task4.model.Model;
+import proj.task4.model.Users;
+import proj.task4.repository.LoginsRep;
+import proj.task4.repository.UsersRep;
+import proj.task4.service.DataWriteable;
 
-
-import java.util.ArrayList;
-import java.util.Collections;
 
 import java.util.List;
 
 
 @Component
 public class DataWriter implements DataWriteable {
+    private final UsersRep usersRep;
+    private final LoginsRep loginsRep;
+
     @Autowired
-    UsersRep usersRep;
-    @Autowired
-    LoginsRep loginsRep;
+    public DataWriter(UsersRep usersRep, LoginsRep loginsRep) {
+        this.usersRep = usersRep;
+        this.loginsRep = loginsRep;
+    }
 
     @Override
     @Transactional

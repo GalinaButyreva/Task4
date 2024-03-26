@@ -1,7 +1,8 @@
-package proj.task4;
+package proj.task4.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import proj.task4.model.Users;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,57 +1,58 @@
-package proj.task4;
+package proj.task4.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import proj.task4.model.Model;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 
 
 @Component
 public class DataMaker {
    // Строки прочитанные
-   List<Model> models;
+   private List<Model> models;
    // Компонента чтения данных
-   DataReader dataReader;
-   //Компонента проверки данных
-   DataCheck dataCheck;
-   DataWriter dataWriter;
+   private final DataReader dataReader;
+
+   private final DataWriter dataWriter;
+    //Компоненты проверки данных
+   private final DataCheckFio dataCheckFio;
+   private final DataCheckType dataCheckType;
+   private final DataCheckDate dataCheckDate;
 
     @Autowired
-   public DataMaker(DataReader dataReader, DataCheck dataCheck, DataWriter dateWriter) {
+   public DataMaker(DataReader dataReader
+                , DataCheckFio dataCheckFio
+                , DataCheckType dataCheckType
+                , DataCheckDate dataCheckDate
+                , DataWriter dateWriter) {
 
         this.dataReader = dataReader;
-        this.dataCheck = dataCheck;
         this.dataWriter = dateWriter;
+        this.dataCheckFio = dataCheckFio;
+        this.dataCheckType = dataCheckType;
+        this.dataCheckDate = dataCheckDate;
 
     }
-
-
 
     public  void make() throws IOException {
         // Получим путь(по условию задачи) для загрузки файлов(его можно разными способами задавать)
         String strPath = dataReader.getPath();
         // Читаем данные из файлов
         models = dataReader.readFromFiles(strPath);
-        //models = dataReader.readFiles();
 
         // Выполняем проверку данных
         // Проверяем ФИО(меняем на первые заглавные буквы)
-        models = dataCheck.checkFioL(models);
-
+        models = dataCheckFio.checkFioL(models);
 
         // Проверяем тип меняем на "other: ", если не  web, mobile
-        models = dataCheck.checkTypeL(models);
+        models = dataCheckType.checkTypeL(models);
 
         // Проверяем дату Если пустая, записываем в файл
-        models = dataCheck.checkDateL(models);
-
+        models = dataCheckDate.checkDateL(models);
 
        //    System.out.println("=========Запись в БД =========================");
         dataWriter.writeDb(models);
-
    }
 }
